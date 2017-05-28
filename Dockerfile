@@ -2,12 +2,15 @@ FROM resin/rpi-raspbian:jessie
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
+    wget \
     python \
     python-dev \
+    libpython-all-dev \
     python-pip \
     python-virtualenv \
     python3 \
     python3-dev \
+    libpython3-all-dev \
     python3-pip \
     python3-virtualenv \
     --no-install-recommends && \
