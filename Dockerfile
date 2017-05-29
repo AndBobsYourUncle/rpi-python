@@ -2,6 +2,7 @@ FROM resin/rpi-raspbian:jessie
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
+    curl \
     wget \
     python \
     python-dev \
